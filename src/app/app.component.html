@@ -3,10 +3,45 @@
   <h1>
     Welcome to Wendy Tovar!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <h1>Listado de elementos</h1>
+<table >
+  <tr>
+    <td><strong>Nombre Elemento</strong></td>
+    <td><strong>Simbolo</strong></td>
+    <td><strong>Numero atomico</strong></td>
+    <td><strong>Peso Atomico</strong></td>
+  </tr>
+  <tr *ngFor="let nombre of paises">
+    <td>{{nombre.nombre}}</td>
+    <td>{{nombre.simbolo}}</td>
+    <td>{{nombre.numero_atomico}}</td>
+   <td>{{nombre.peso_atomico}}</td>
+  </tr>
+
+  
+
+
+
+  <tr>
+    <td>Cobalto</td>
+    <td>Co</td>
+    <td>28</td>
+    <td>58,933</td>
+  </tr>
+
+  <tr>
+    <td>Plomo</td>
+    <td>Pb</td>
+    <td>82</td>
+    <td>207,2</td>
+  </tr>
+</table>
+ 
 </div>
 <h2>wendyd-tovarr@unilibre.edu.co </h2>
 <h2>wendy dayanna tovar rojas</h2>
+
+
 <ul>
   <li>
     <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
